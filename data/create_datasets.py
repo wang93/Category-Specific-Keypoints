@@ -19,7 +19,7 @@ if __name__ == "__main__":
 
 	if dataset == 'ShapeNet':
 		data_dir = root + mode + '_data_npy/' + category + '/'
-		list_el = glob.glob(os.path.join(data_dir, '*.pts'))
+		list_el = glob.glob(os.path.join(data_dir, '*.npy'))
 	elif dataset == 'ModelNet10':
 		data_dir = root + category + '/' + mode + '/' 
 		list_el = glob.glob(os.path.join(data_dir, '*.off'))
