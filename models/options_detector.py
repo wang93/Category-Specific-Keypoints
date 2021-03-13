@@ -63,7 +63,7 @@ class Options():
 
         # save to the disk
         self.opt.checkpoints_dir = self.opt.data_dir + self.opt.dataset + '/checkpoints/' + self.opt.ckpt_model 
-        expr_dir =  os.path.join(self.opt.checkpoints_dir, 'train')
+        expr_dir = os.path.join(self.opt.checkpoints_dir, 'train')
         util.mkdirs(expr_dir)
         file_name = os.path.join(expr_dir, 'opt.txt')
         with open(file_name, 'wt') as opt_file:

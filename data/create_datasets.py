@@ -18,7 +18,7 @@ if __name__ == "__main__":
 		raise Exception('dataset error.') 
 
 	if dataset == 'ShapeNet':
-		data_dir = root + mode + '_data/' + category + '/'
+		data_dir = root + mode + '_data_npy/' + category + '/'
 		list_el = glob.glob(os.path.join(data_dir, '*.pts'))
 	elif dataset == 'ModelNet10':
 		data_dir = root + category + '/' + mode + '/' 
@@ -30,7 +30,6 @@ if __name__ == "__main__":
 	    os.makedirs(dump_dir)
 
 	for i, name in enumerate(list_el):
- 
 	    pc = read_data(name, dataset)
 	    pc = normalize_data(pc)
 
