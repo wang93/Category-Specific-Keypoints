@@ -11,8 +11,8 @@ if __name__ == "__main__":
 	dataset = 'ShapeNet' 
 	category = 'airplane'
 	mode = 'test'
-	root = '/path/to/original/dataset/'
-	dump_root = '/path/to/Data/' + dataset + '/'
+	root = '/disk1/yicheng/ShapeNet'
+	dump_root = '/disk1/yicheng/' + dataset + '_csk/'
 
 	if dataset not in ['ModelNet10', 'ShapeNet', 'dfaust', 'faces', 'sunrgbd']:
 		raise Exception('dataset error.') 
