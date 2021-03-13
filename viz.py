@@ -65,9 +65,10 @@ if __name__ == "__main__":
     category = 'airplane'
     ckpt_model = 'airplane_10b'
 
-    root_data = './' + dataset + '/data/' + category + '/' 
-    root_results = './' + dataset + '/results/' + ckpt_model + '/' 
+    root_data = '/disk1/yicheng/' + dataset + '/test_data_npy/' + category + '/' 
+    root_results = '/disk1/yicheng/' + dataset + '/results/' + ckpt_model + '/' 
     list_el = glob.glob(os.path.join(root_results, '*.mat'))
+    print(len(list_el))
 
 
     for i, name in enumerate(list_el):
