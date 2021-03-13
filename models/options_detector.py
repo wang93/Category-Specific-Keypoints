@@ -14,8 +14,8 @@ class Options():
     def initialize(self):
         self.parser.add_argument('--gpu_ids', type=str, default='0', help='auto or gpu_ids seperated by comma.')
 
-        self.parser.add_argument('--data_dir', type=str, default='/home/cajad/scratch/Datasets/', help='folder where all data is stored')
-        self.parser.add_argument('--dataset', type=str, default='modelnet', help='ModelNet10, ShapeNet, dfaust, faces, sunrgbd')
+        self.parser.add_argument('--data_dir', type=str, default='/disk1/yicheng/', help='folder where all data is stored')
+        self.parser.add_argument('--dataset', type=str, default='ModelNet10', help='ModelNet10, ShapeNet, dfaust, faces, sunrgbd')
         self.parser.add_argument('--category', type=str, default='chair', help='name of the category we are training with')
         
         self.parser.add_argument('--ckpt_model', type=str, default=None, help='name of the trained model') 

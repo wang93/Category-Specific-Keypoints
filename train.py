@@ -118,7 +118,7 @@ if __name__=='__main__':
 
         # learning rate decay
         lr_decay_step = 40
-        if epoch%lr_decay_step==0 and epoch > 0:
+        if epoch % lr_decay_step == 0 and epoch > 0:
             model.update_learning_rate(0.5)
         # batch normalization momentum decay:
         next_epoch = epoch + 1
